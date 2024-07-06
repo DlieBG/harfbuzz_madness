@@ -1,0 +1,14 @@
+[package]
+name = "dliebgttf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+harfbuzz-wasm = { path = "../harfbuzz-wasm"}
+wasm-bindgen = "0.2.92"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+panic = "abort"
